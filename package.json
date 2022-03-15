@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/streams-node-transform",
-  "version": "0.0.7",
+  "version": "0.0.0",
   "description": "Transform stream.",
   "license": "Apache-2.0",
   "author": {
@@ -43,6 +43,7 @@
     "@stdlib/assert-is-nonnegative-number": "^0.0.x",
     "@stdlib/assert-is-plain-object": "^0.0.x",
     "@stdlib/assert-is-string": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/utils-copy": "^0.0.x",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.x",
     "@stdlib/utils-inherit": "^0.0.x",
