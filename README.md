@@ -24,14 +24,30 @@ limitations under the License.
 
 > [Transform stream][transform-stream].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/streams-node-transform
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import transformStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-transform@deno/mod.js';
+var transformStream = require( '@stdlib/streams-node-transform' );
 ```
 
 <a name="transform-stream"></a>
@@ -41,7 +57,7 @@ import transformStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-
 Creates a [transform stream][transform-stream].
 
 ```javascript
-import stdout from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdout@deno/mod.js';
+var stdout = require( '@stdlib/streams-node-stdout' );
 
 function transform( chunk, enc, clbk ) {
     clbk( null, chunk.toString()+'\n' );
@@ -178,7 +194,7 @@ This method is a convenience function to create [streams][stream] which always o
 <!-- eslint-disable object-curly-newline -->
 
 ```javascript
-import stdout from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdout@deno/mod.js';
+var stdout = require( '@stdlib/streams-node-stdout' );
 
 function stringify( chunk, enc, clbk ) {
     clbk( null, JSON.stringify( chunk ) );
@@ -251,8 +267,8 @@ The returned constructor accepts the same `options` as documented above, **excep
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import stdout from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdout@deno/mod.js';
-var factory = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-transform' ).factory;
+var stdout = require( '@stdlib/streams-node-stdout' );
+var factory = require( '@stdlib/streams-node-transform' ).factory;
 
 function parse( chunk, enc, clbk ) {
     clbk( null, JSON.parse( chunk ) );
@@ -325,7 +341,7 @@ s1.end();
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -381,6 +397,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/streams-node-transform/tree/deno
 [umd-url]: https://github.com/stdlib-js/streams-node-transform/tree/umd
 [esm-url]: https://github.com/stdlib-js/streams-node-transform/tree/esm
+[branches-url]: https://github.com/stdlib-js/streams-node-transform/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/streams-node-transform/main/LICENSE
 
