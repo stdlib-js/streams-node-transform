@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import transformStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-transform@esm/index.mjs';
+import transformStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-transform@v0.1.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ctor, factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-transform@esm/index.mjs';
+import { ctor, factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-transform@v0.1.0-esm/index.mjs';
 ```
 
 <a name="transform-stream"></a>
