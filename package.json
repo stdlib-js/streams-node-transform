@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@stdlib/bench": "^0.1.0",
-    "@stdlib/streams-node-inspect-sink": "^0.0.6",
+    "@stdlib/streams-node-inspect-sink": "^0.1.0",
     "@stdlib/streams-node-stdout": "^0.1.0",
     "@stdlib/utils-noop": "^0.1.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
